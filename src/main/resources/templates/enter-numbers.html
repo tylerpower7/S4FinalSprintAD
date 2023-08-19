@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Binary Search Tree Generator</title>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <h1>Binary Search Tree Generator</h1>
+    <nav>
+      <a th:href="@{/previous-trees}" >Show Previous Trees</a>
+      <a th:href="@{/}" >Home</a>
+    </nav>
+  </div>
+</header>
+<div class="form-container">
+  <form th:action="@{/process-numbers}" method="post">
+    <label for="numbers" class="form-label">Enter a series of numbers separated by a space:</label>
+    <input type="text" id="numbers" name="numbers" class="form-input" required>
+    <button type="submit" >Submit</button>
+  </form>
+</div>
+<footer class="footer">
+  <span>&#169;</span> Tyler Power 2023
+</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Binary Search Tree Visualization</title>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <h1>Binary Search Tree Visualization</h1>
+    <nav >
+      <a th:href="@{/enter-numbers}" >Enter Numbers</a>
+      <a th:href="@{/}" >Home</a>
+    </nav>
+  </div>
+</header>
+
+
+
+<pre class="json-tree" th:text="${jsonData}"></pre>
+
+
+<footer class="footer">
+  <span>&#169;</span> Tyler Power 2023
+</footer>
+</body>
+</html>

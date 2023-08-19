@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Previous Trees</title>
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <h1>Previous Trees</h1>
+    <nav>
+      <a th:href="@{/enter-numbers}">Enter Numbers</a>
+      <a th:href="@{/}" >Home</a>
+    </nav>
+  </div>
+</header>
+<ul>
+
+  <li th:each="treeJson : ${treeJsonList}">
+    <pre th:text="${treeJson}"></pre>
+  </li>
+</ul>
+<footer class="footer">
+  <span>&#169;</span> Tyler Power 2023
+</footer>
+</body>
+</html>
